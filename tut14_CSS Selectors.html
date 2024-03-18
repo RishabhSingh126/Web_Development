@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /*Element selector*/
+        p{
+            border: 2px solid rgb(179, 255, 0);
+        }
+        /*ID selector*/
+        #firstpara{
+            color: red;
+        }
+        /*Class selecotr*/
+        .bgBlue{
+            color: pink;
+            background-color: blue;
+        }
+        /*Grouping selector*/
+        footer,span{
+            background-color: pink;
+        }
+        /*Child selector*/
+        div > p{
+            color: pink;
+            background-color: aqua;
+        }
+        /*Descendent selector*/
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /*Universal selector*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*Pseudo selector*/
+        a :visited{
+            color: yellow;
+        }
+
+        a :link{
+            color: rgb(7, 29, 87);
+        }
+
+        a :active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+    <p id="firstpara">This is paragraph to demonstrate CSS selectors</p>
+    <p id="secondparagraph" class="RedElement bgBlue">This is another paragraph to demonstrate CSS selectors</p>
+    <div>
+        <p>This is yet another paragraph to demonstrate CSS selectors</p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+    <div>
+        This is another div
+        <article>
+            <p>This is paragraph inside div and article</p>
+        </article>
+    </div>
+    <a href="http://google.com">Go to google</a>
+    <a href="http://facebook.com">Go to facebook</a>
+</body>
+</html>

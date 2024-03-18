@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition properties</title>
+    <style>
+        h1{
+            color: purple;
+        }
+        body{
+            background-color: black;
+        }
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(228, 148, 161);
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+
+            /*Transiotion shorthand*/
+            /*transition: background-color 1s ease-in 2s;*/
+
+            /*For applying transition properties on all*/
+            transition: all 1s ease-in-out 0s;
+        }
+        #box:hover{
+            background-color: rgb(216, 49, 49);
+            height: 500px;
+            width: 600px;
+            border-radius: 100px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is transition tutorial</h1>
+    <div class="container">
+        <div id="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

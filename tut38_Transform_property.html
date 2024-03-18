@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Transform porperty</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: rgb(211, 155, 164);
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(122, 228, 122);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid rgb(233, 70, 70);
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            transform: rotate(45deg);
+            /*transform: skew(30deg);
+            transform: scale(2);
+            transform: translateX(120px);
+            transform: translate3d(120px);*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

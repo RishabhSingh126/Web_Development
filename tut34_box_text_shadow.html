@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 10px 20px;
+            margin: 10px 20px;
+            /*border: 4px solid rgb(216, 63, 63);*/
+            background-color: rgb(243, 198, 205);
+
+            /*box-shadow: x-axis y-axis  color ;*/
+            /*box-shadow:10px 10px rgb(87, 201, 87);*/
+
+            /*box-shadow: x-axis y-axis blur-radius color ;*/
+            box-shadow:10px 10px 10px rgb(87, 201, 87);
+
+            /*box-shadow: x-axis y-axis blur-radius spread-radius color ;*/
+            /*box-shadow:10px 10px 10px 20px rgb(87, 201, 87);*/
+            /*box-shadow: -10px -10px rgb(118, 118, 228);*/
+
+            /*box-shadow: inset 10px 10px rgb(139, 139, 243);*/
+            /*box-shadow: 10px 10px green,15px 15px blue;*/
+        }
+        .card h2{
+            text-shadow: 2px 3px rgb(101, 101, 228);
+            text-shadow: 2px 4px 10px rgb(20, 213, 219);
+            text-shadow: 2px 6px 10px rgb(236, 82, 82);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum totam iste ea dolorem sequi earum vero doloremque vel, laborum hic cumque ad at dignissimos omnis, voluptas repudiandae excepturi incidunt officia?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia nihil voluptatum. Soluta id eius labore nulla vitae error, qui, optio suscipit perferendis magni, voluptate illo quo dolores voluptatem earum!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, voluptatem, nesciunt natus nisi aspernatur aliquam corrupti error odio aliquid placeat voluptatum quo, maiores adipisci in rem. Deleniti assumenda sint culpa.</p>
+        </div>
+    </div>
+</body>
+
+</html>

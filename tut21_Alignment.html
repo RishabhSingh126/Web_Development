@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&family=Roboto+Condensed:ital,wght@1,300&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Playpen Sans', cursive;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Tilt Neon', sans-serif;
+        }
+        .container{
+            background-color: rgb(238, 236, 111);
+            width: 900px;
+            border: 4px solid rgb(62, 192, 10);
+            margin: auto;/*Brings in centre*/
+        }
+        .item{
+            border: 6px solid rgb(5, 71, 133);
+            margin: 20px 20px 20px 20px;
+            padding: 20px 20px 20px 20px;
+            background-color: rgb(199, 243, 182);
+            /*line-height: 20px;*/
+        }
+        #fruits{
+            float: left;
+            width: 45%;
+        }
+        #computer{
+            float: left;
+            width: 45%;
+        }
+        #stationary{
+            /*float: left;*/
+            /*Left element is not allowed*/
+            /*clear: left;*//*Left element is not allowed*/
+            clear: both;/*Both left and right element are not allowed*/
+            width: 96%;
+        }
+        p{
+            /*text-align: left;
+            text-align: right;
+            text-align: center;*/
+            text-align: justify;
+        }
+        h1{
+            /*margin: auto;
+            width: 310px;*/
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h2>Fruits</h2>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste laboriosam sit, quidem minus repellendus maxime nesciunt animi reprehenderit earum illo vitae! Odit, expedita, magni sunt enim perspiciatis, aperiam harum vel temporibus omnis illo cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti atque natus nulla consectetur in impedit, inventore adipisci officia corporis, hic harum animi fugit molestiae quod dolore assumenda ducimus sequi! Cupiditate?34 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil quibusdam odio, debitis quis rem, a similique iusto quidem exercitationem labore ad fugiat quaerat, qui sint. Deleniti quam quia, quasi fugit veritatis incidunt mollitia?</p>
+        </div>
+        <div id="computer" class="item">
+            <h2>Computer</h2>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ex quisquam dolorem corrupti nam voluptas tenetur sit natus architecto. Voluptas inventore, unde quasi facilis quibusdam fugit quod. Sapiente ea molestias nihil optio! Accusantium, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor repellat officia ea molestiae nihil odio quam! Maiores amet dolore molestias architecto officia neque alias totam adipisci ullam accusantium quas vel nulla, aperiam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quibusdam facilis quidem odio veniam consequatur velit aspernatur vero hic officiis nam inventore eius similique, reprehenderit, qui iure! Officia, recusandae harum deleniti eum eaque magnam?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h2>Stationary</h2>
+            <p id="stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque expedita ea animi dolore esse, natus amet neque! Alias, distinctio placeat? Accusamus dicta alias reiciendis maiores perspiciatis obcaecati nemo possimus! Temporibus</p>
+        </div>
+        <div id="Glasses" class="item">
+            <h2>Glasses</h2>
+            <p id="glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque expedita ea animi dolore esse, natus amet neque! Alias, distinctio placeat? Accusamus dicta alias reiciendis maiores perspiciatis obcaecati nemo possimus! Temporibus</p>
+        </div>
+    </div>
+</body>
+</html>

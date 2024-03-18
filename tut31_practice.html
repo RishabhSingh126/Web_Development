@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+        /*div{
+            background-color: pink;
+            color: black;
+            font-weight: bold;
+        }*/
+        /*div p{
+            background-color: pink;
+            color: black;
+            font-weight: bold;
+        }*/
+        /*div > p{
+            background-color: pink;
+            color: black;
+            font-weight: bold;
+        }*/
+        div + p{
+            background-color: pink;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="1">
+            <p>This paragraph is inside 2nd div</p>
+            <div class="2">
+                <ul>
+                    <li><p>This paragraph is inside li , ul , div and p</p></li>
+                </ul>
+                <p>This paragraph is inside 3rd div</p>
+            </div>
+            <p>This is second paragraph inside 2nd div</p>
+        </div>
+        <p>This paragraph is inside 1st div</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

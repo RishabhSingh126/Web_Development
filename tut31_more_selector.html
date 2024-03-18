@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+        h1{
+            background-color: rgb(235, 89, 89);
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+        /*div p{
+            background-color: rgb(194, 241, 149);
+            color: red;
+            font-weight: bold;
+        }*/
+
+        /*For selecting all paragraphs wherever they are*/
+        /*div li p{
+            background-color: rgb(194, 241, 149);
+            color: red;
+            font-weight: bold;
+        }*/
+
+        /*If p is direct child of div*/
+        /*div > p{
+            background-color: rgb(194, 241, 149);
+            color: red;
+            font-weight: bold;
+        }*/
+
+        /*If div is last sibling of p then property will apply */
+        div + p{
+            background-color: rgb(148, 236, 229);
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is paragraph under li and p </p></li>
+                <li>This is under li</li>
+                <p>This paragraph is inside ul</p>
+            </ul>
+            <p>This is paragraph</p>
+        </div>
+        <p>This is another paragaph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

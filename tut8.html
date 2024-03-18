@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorials</h2>
+    <form action="backend.php">
+    </form>
+
+    <!---->
+    <label for="name"> Name</label>
+    <div>
+        <input type="text" name="My name" id="name">
+    </div>
+    <br>
+    <label for="roll">Roll number</label>
+    <div>
+        <input type="text" name="My roll no." id="roll">
+    </div>
+
+    <!--By the help of name backend will understand what it is containing-->
+    <br>
+    <label for="email">E mail</label>
+    <div>
+        <input type="email" name="My e mail" id="email">
+    </div>
+    <br>
+    <label for="date">Date</label>
+    <div>
+        <input type="date" name="" id="date">
+    </div>
+    <br>
+    <div>
+
+        <!--select is used selecting something it contains option-->
+        <label for="car"> Car</label>
+        <select name="my car" id="car">
+            <option value="ind">indica</option>
+            <option value="sw">swift</option>
+        </select>
+    </div>
+    <!--input:submit is use to display submit in box-->
+    <div>
+        Are you elligble :<input type="checkbox" name="My eligibility" checked>
+    </div>
+    <br>
+    <!--if name will be same then we will able to select any one-->
+    <label for="gender">Gender</label>
+    <div>
+        male <input type="radio" name="my gender" id="gender"> female <input type="radio" name="my gender" id="gender">
+    </div>
+    <br>
+    <div>
+        write about yourself :<br><textarea name="my text" id="" cols="30" rows="10"></textarea>
+    </div> 
+    <br>
+    <br>
+    <div>
+        <input type="submit" value="Submit Now">
+    </div>
+    <br>
+    <div>
+        <input type="reset" value="reset Now">
+    </div>
+    <br>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: rgb(233, 132, 149);
+        }
+        .box{
+            background-color: rgb(90, 238, 90);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /*animation-name: Animation1;*/
+            animation-name: Animation2;
+            animation-duration: 200 s;
+            animation-iteration-count: 100;
+            /*animation-fill-mode: backwards;*/
+            /*It tells the position after completing the animation*/
+            animation-fill-mode:alternate;
+            animation-timing-function: ease-in;
+            animation-delay: 2s;
+            animation-direction: alternate;
+
+            /*animation:animation-name animation-dusration animation-timing-finction animation-delay animation-iteration-count animation-fill-mode*/
+            /*animation: Animation1 2s ease-in 4s 10 alternate;*/
+        }
+        @keyframes Animation2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+        @keyframes Animation1 {
+            from {
+                width: 300px;
+            }
+            to {
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

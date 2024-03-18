@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            border: 4px solid rgb(187, 48, 48);
+            width: 360px;
+            height: 460px;
+            width: 100vw;
+            height: 100vh;
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #First{
+            /*3em means font size of first heading will become 3*10 because 10 is font size of its parent (container)*/
+            /*font-size: 3em;*/
+            /*In this 3em will take according to upper font size*/
+            /*padding: 3em;*/
+        }
+        #Second{
+            /*3rem means font size of second heading will become 3*10 because 10 is font size of html*/
+            /*font-size: 3rem;*/
+            /*padding: 3rem;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="First">This is first heading</h1>
+        <h1 id="Second">This is second heading</h1>
+        <h1 id="Third">This is third heading</h1>
+    </div>
+</body>
+</html>
